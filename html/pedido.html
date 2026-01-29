@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <h1>Carta Hamburguesas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="subTitle">
+            <h2>Informacion Personal Cliente</h2>
+        </div>
+        <form action="">
+                <label for="fullName">Nombre Completo</label><br>
+                    <input type="text" id="fullName" name="fullName" placeholder="juanito" required minlength="10" maxlength="30"><br>
+                <label for="email">Correo Electronico</label><br>
+                    <input type="email" id="email" name="email" placeholder="estiivengrajales@gmai.com" required minlength="12" maxlength="50"><br>
+                <label for="phoneNumber">Numero de Telefono</label><br>
+                    <input type="number" id="phoneNumber" name="phoneNumber" placeholder="+57 301 222 22 22" pattern="[0-9]{10}" required >
+            <div>
+                <div>
+                    <div>
+                        <h2>Selecciona tu Pedido.</h2>
+                    </div>
+                    
+                        <label><h3>Escoja una opcion</h3></label><br>
+                        <label>
+                            <input type="radio" name="pedido" value="Clasica">Clásica
+                        </label><br>
+                        <label>
+                            <input type="radio" name="pedido" value="dobleCarne">Doble Carne
+                        </label><br>
+                        <label>
+                            <input type="radio" name="pedido" value="Vegetariana">Vegetariana
+                    </label><br>
+                    
+            </div>
+            <div>
+                <div><h3>Ingredientes Extras</h3></div>
+                    <label>
+                        <input type="checkbox" name="Extras" value="queso">Queso
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Extras" value="tocineta">Tocineta
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Extras" value="huevo"> Huevo
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="Extras" value="1"> 1<input type="checkbox" name="Extras" value="2"> 2
+                        <input type="checkbox" name="Extras" value="3"> 3 <input type="checkbox" name="Extras" value="4"> 4
+                        <input type="checkbox" name="Extras" value="5"> 5
+                    </label><br>
+                    <label>
+                        <textarea name="comentario" id="comentario">Comentarios</textarea>
+                    </label><br>
+                
+                <div>
+                    <div><h3>Direccion Entrega.</h3></div>
+                    
+                        <label for="entrega" name="entrega" > Ubicación Entrega <br>
+                            <input type="text" id="entrega" name="entrega" value="Calle 59 #59-59" required min="8" max="25">
+                        </label><br>
+                        <label for="pago">Formas de pago</label>
+                        <select name="pago" id="pago">
+                            <option value="Efectivo">Efectivo</option>
+                            <option value="Tarjeta">Tarjeta</option>
+                            <option value="Transferencia">Transferencia</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="submit">
+                    <input type="submit" id="submit">
+                </label>
+            </div>
+            <div>
+                <label for="reset">
+                    <input type="reset">
+                </label>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
